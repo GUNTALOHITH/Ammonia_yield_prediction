@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Yield Prediction</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .login {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+        h1 {
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        input[type="text"] {
+            margin-bottom: 15px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            padding: 15px;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        h2 {
+            text-align: center;
+            color: #333;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login">
+        <h1>Yield Prediction</h1>
+        <!-- Main Input For Receiving Query to our ML -->
+        <form action="{{ url_for('predict_datapoint')}}" method="post">
+            <input type="text" name="Temperature" placeholder="Temperature" required="required" /><br>
+            <input type="text" name="Pressure" placeholder="Pressure" required="required" /><br>
+            <input type="text" name="Catalyst_Concentration" placeholder="Catalyst_Concentration" required="required" /><br>
+            <input type="text" name="Feed_Composition" placeholder="Feed_Composition" required="required" /><br>
+            <input type="text" name="Reaction_Time" placeholder="Reaction_Time" required="required" /><br>
+            <input type="text" name="Reactor_Volume" placeholder="Reactor_Volume" required="required" /><br>
+            <input type="text" name="Cooling_Rate" placeholder="Cooling_Rate" required="required" /><br>
+            <input type="text" name="Agitation_Speed" placeholder="Agitation_Speed" required="required" /><br>
+            <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+        </form>
+        <h2>THE Yield prediction is {{result}}</h2>
+    </div>
+</body>
+</html>

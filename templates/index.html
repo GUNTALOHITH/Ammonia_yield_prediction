@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Process Yield Prediction - JNTUH CHEMICAL</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background: #004080;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 36px;
+        }
+
+        section {
+            margin: 20px 0;
+        }
+
+        h2 {
+            color: #004080;
+            margin-bottom: 15px;
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            margin-bottom: 20px;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .highlight {
+            color: #e67e22;
+            font-weight: bold;
+        }
+
+        footer {
+            background: #004080;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            margin-top: 40px;
+        }
+
+        .note {
+            font-size: 16px;
+            font-style: italic;
+            margin-top: 20px;
+            color: #888;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #e67e22;
+            color: white;
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 20px;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #d35400;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Chemical Process Yield Prediction - JNTUH CHEMICAL</h1>
+    </header>
+
+    <div class="container">
+        <section>
+            <h2>Dataset Overview</h2>
+            <p>This dataset is taken from BASF and simulates a chemical process where the goal is to predict the <span class="highlight">yield</span> of a product based on various process parameters. It includes <span class="highlight">1,000 data points</span> and captures common variables in chemical engineering processes such as temperature, pressure, and catalyst concentration.</p>
+            <p>The ultimate objective is to build predictive models that can optimize the process conditions and increase the yield, which is crucial in industrial chemical processes like <span class="highlight">ammonia production</span> via the Haber-Bosch process.</p>
+        </section>
+
+        <section>
+            <h2>Target Variable</h2>
+            <p>The <span class="highlight">Yield</span> is the target variable representing the output of the chemical process. It is influenced by multiple parameters and is crucial for optimizing the efficiency of the process.</p>
+        </section>
+
+        <section>
+            <h2>Input Features</h2>
+            <p>The following process parameters influence the yield:</p>
+            <ul>
+                <li><span class="highlight">Temperature (°C)</span>: Temperature affects reaction rates and product distribution.</li>
+                <li><span class="highlight">Pressure (atm)</span>: Higher pressure can increase reaction rates and shift equilibria.</li>
+                <li><span class="highlight">Catalyst Concentration (mol/L)</span>: Catalysts improve the efficiency of reactions without being consumed.</li>
+                <li><span class="highlight">Feed Composition (mol fraction)</span>: Higher reactant concentration can lead to higher yields.</li>
+                <li><span class="highlight">Reaction Time (hours)</span>: The duration of the reaction significantly impacts the yield.</li>
+                <li><span class="highlight">Reactor Volume (L)</span>: Affects residence time and reaction scaling.</li>
+                <li><span class="highlight">Cooling Rate (°C/min)</span>: Helps in achieving desired product distributions and preventing side reactions.</li>
+                <li><span class="highlight">Agitation Speed (RPM)</span>: Improves heat and mass transfer, ensuring homogeneity.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Predictive Task</h2>
+            <p>The primary task is to build models to predict the <span class="highlight">yield</span> of the chemical process based on the given features. This approach can help optimize the process conditions, minimize waste, and improve product quality.</p>
+        </section>
+
+        <section>
+            <h2>Industry Context</h2>
+            <p>While this dataset is synthetic, it simulates conditions typically encountered in industrial chemical production, such as in companies like <span class="highlight">BASF</span>, which are involved in processes like ammonia production. These companies frequently leverage data-driven approaches to optimize their chemical processes, reduce costs, and improve sustainability.</p>
+        </section>
+
+        <section>
+            <h2>Applications</h2>
+            <p>Such predictive models can be valuable in industries like:</p>
+            <ul>
+                <li><span class="highlight">Petrochemicals</span></li>
+                <li><span class="highlight">Pharmaceuticals</span></li>
+                <li><span class="highlight">Fertilizer Manufacturing</span></li>
+                <li><span class="highlight">Fine Chemicals</span></li>
+            </ul>
+            <a href="#" class="button">Learn More About Process Optimization</a>
+        </section>
+
+        <p class="note">Note: The dataset is synthetically generated but simulates real-world industrial challenges faced by chemical companies like BASF.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Chemical Process Optimization | BASF | JNTUH | CHEMICAL 2025</p>
+    </footer>
+</body>
+
+</html>
